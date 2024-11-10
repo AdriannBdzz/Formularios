@@ -1,0 +1,175 @@
+/* Diseño general del body */
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a237e, #d32f2f);
+    margin: 0;
+    color: #333;
+}
+
+/* Estilo del contenedor de los formularios */
+.form-container {
+    width: 100%;
+    max-width: 480px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombras más suaves */
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    box-sizing: border-box;
+}
+
+/* Estilo para el título del formulario */
+.form-container h2 {
+    font-size: 28px;
+    color: #1A237E;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0 20px 0;
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background: #FAFAFA;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de enfoque en los campos de entrada */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus {
+    border-color: #3D5AFE;
+    box-shadow: 0 0 6px rgba(61, 90, 254, 0.3);
+    outline: none;
+}
+
+/* Estilo para los botones */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: #1A237E; /* Botón con un color más profundo */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+button:hover {
+    background: #3949AB;
+    transform: translateY(-2px);
+}
+
+/* Efecto al hacer clic en el botón */
+button:active {
+    background: #1E88E5;
+    transform: translateY(1px);
+}
+
+/* Estilo para el párrafo con enlace */
+.form-container p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Estilo del enlace */
+.form-container p a {
+    color: #3D5AFE;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor sobre el enlace */
+.form-container p a:hover {
+    color: #1E88E5;
+    text-decoration: underline;
+}
+
+/* Estilo para la caja de contraseña con el botón "Mostrar/Ocultar" */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Ajustes en los campos de contraseña y texto */
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    padding-right: 50px;
+}
+
+/* Estilo del botón de mostrar/ocultar contraseña */
+.mostrarContrasena {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #3D5AFE;
+    font-weight: 600;
+    font-size: 14px;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover para el botón de mostrar/ocultar contraseña */
+.mostrarContrasena:hover {
+    color: #1E88E5;
+}
+
+/* Estilos compartidos entre las tarjetas de login y registro */
+.register-card, .card {
+    max-width: 280px;
+    margin: 40px auto;
+    background-color: #F5F5F5;
+    border-radius: 16px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1); /* Sombras más suaves */
+    padding: 25px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Efecto hover en la tarjeta */
+.card:hover, .register-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo del texto de instrucciones en las tarjetas */
+.instruction-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+/* Estilo para el mensaje de error */
+.error-message {
+    color: #D32F2F; /* Rojo más fuerte para mensajes de error */
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+
